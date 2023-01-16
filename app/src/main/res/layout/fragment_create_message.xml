@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateMessage.CreateMessageFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#FF5722"
+            android:text="201913709008 - AHMET BALKI"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="109dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:text="MESAJ"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/messageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="@+id/textView10"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="MESAJ"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/messageName"
+            tools:layout_editor_absoluteX="27dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/message"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:layout_width="357dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/createMessage"
+            android:layout_width="342dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:text="MESAJ OLUŞTUR"
+            app:layout_constraintEnd_toEndOf="@+id/message"
+            app:layout_constraintStart_toStartOf="@+id/message"
+            app:layout_constraintTop_toBottomOf="@+id/message" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="MESAJLAR"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/createMessage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/createMessage"
+            app:layout_constraintTop_toBottomOf="@+id/createMessage" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="409dp"
+            android:layout_height="237dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
